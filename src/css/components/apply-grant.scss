@@ -1,0 +1,55 @@
+.apply-grant {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin: 60px 0 15px 0;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .wp-block-heading {
+        font-size: 1.75rem;
+        font-weight: 300;
+        font-family: 'Droid Serif', serif;
+        color: var(--black-2);
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        height: max-content;
+
+        @include mobile {
+            justify-content: center;
+        }
+
+        p {
+            display: flex;
+
+            a {
+                background-color: #2d4f73;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+                border-color: #2d4f73;
+                color: #fff;
+                font-size: 15px;
+                line-height: normal;
+                padding: 12.5px 22px;
+                border-radius: 20px;
+                border-top-left-radius: 0;
+
+                @include mobile {
+                    padding: 12.5px 61px;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 0 5px rgba(50, 50, 50, 0.05);
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    color: #392e1c;
+                }
+            }
+        }
+    }
+}

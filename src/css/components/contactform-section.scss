@@ -1,0 +1,38 @@
+.box-contactform {
+    width: max-content;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+
+    h1 {
+        font-family: Quicksand-medium;
+        margin-bottom: 24px;
+    }
+
+    label {
+        line-height: 30px;
+        max-width: 100%;
+
+        input, textarea {
+            background: var(--pink-1);
+            border: unset;
+            max-width: 100%;
+            outline: unset;
+            padding: 3px 8px;
+        }
+    }
+
+    input.wpcf7-form-control.wpcf7-submit {
+        padding: 5px 15px;
+        border: 1px solid #000;
+        background: transparent;
+
+        &:hover {
+            background: var(--pink-1);
+        }
+    }
+
+    .wpcf7-spinner {
+        display: none;
+    }
+}

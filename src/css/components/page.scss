@@ -1,0 +1,74 @@
+.warrper-title-page {
+    color: #fff;
+    background-color: #024e75;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+
+    .mt-shadow {
+        background: url('src/images/donate-shadow.png') center -1px no-repeat;
+        padding: 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: 'Droid Serif', serif;
+            font-size: 2.25rem;
+            line-height: 1;
+            margin: 0;
+
+            @include desktop {
+                max-width: 70%;
+            }
+        }
+
+        .breadcumbs {
+            display: flex;
+            align-items: center;
+
+            @include mobile {
+                justify-content: flex-end;
+            }
+
+            ul {
+                display: flex;
+                gap: 5px;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    font-size: 0.6875rem;
+
+                    a {
+                        font-size: 0.6875rem;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.warrper-content-page {
+    padding: 40px 0;
+
+    p {
+        padding: 5px 0px 15px 0px;
+        margin: 0px;
+        color: var(--black-2);
+        font-weight: 200;
+        font-size: 0.8125rem;
+
+        strong {
+            font-weight: 600;
+        }
+    }
+}

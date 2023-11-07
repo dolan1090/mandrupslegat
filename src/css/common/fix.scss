@@ -1,0 +1,11 @@
+.wp-block-columns {
+    margin-bottom: 0;
+}
+
+.wp-block-columns .wp-block-cover .has-background-dim:not([class*=-background-color]) {
+    background: unset;
+}
+
+.wp-block-columns .wp-block-column p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,46 @@
+.news-3-columns {
+
+    &.wp-block-columns.is-layout-flex {
+        gap: 1.2rem;
+    }
+
+    figure.wp-block-image img {
+        border-radius: 5px;
+    }
+
+    .wp-block-heading {
+        line-height: 1.3;
+        color: var(--black-3);
+        font-family: 'Droid Serif', serif;
+        font-size: 1.125rem;
+        margin-top: 24px;
+        margin-bottom: 12px;
+
+        a {
+            line-height: 1.3;
+            color: var(--black-3);
+            font-family: 'Droid Serif', serif;
+            font-size: 1.125rem;
+
+            &:hover {
+                color: var(--blue-1);
+            }
+        }
+    }
+
+    .wp-block-column p {
+        font-size: 0.8125rem;
+        color: var(--black-2);
+        margin-bottom: 12px;
+        padding: 0;
+
+        a {
+            font-size: 0.8125rem;
+            color: var(--black-2);
+
+            &:hover {
+                color: var(--blue-1);
+            }
+        }
+    }
+}

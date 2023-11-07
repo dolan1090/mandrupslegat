@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.show-mn {
+  display: block !important;
+}
+
+body {
+  background: var(--white-1);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.m-w-600 {
+  max-width: 600px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+@include desktop {
+  .container {
+    max-width: 940px;
+  }
+}
+
+.container-fluid {
+  padding-right: calc(var(--bs-gutter-x) * 1);
+  padding-left: calc(var(--bs-gutter-x) * 1);
+}
+
+.lin-container {
+  @media (min-width:1024px) {
+    max-width: calc(87vw - 30px);
+    margin: auto;
+  }
+}
+
+.space-default {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 540px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hidden-tb {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hidden-des {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-mb {
+    display: none !important;
+  }
+}
