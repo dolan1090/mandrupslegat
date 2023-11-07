@@ -10,3 +10,8 @@ function add_custom_admin_bar_css() {
     }
 }
 add_action('wp_head', 'add_custom_admin_bar_css');
+
+/**
+ * Opt out for suggesting the persistent object cache
+ */
+add_filter( 'site_status_should_suggest_persistent_object_cache', '__return_false' );
